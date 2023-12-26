@@ -1,0 +1,19 @@
+SELECT *
+FROM superstore
+ORDER BY price;
+
+SELECT COUNT(item_id)
+FROM superstore
+WHERE price>=74.99;
+
+SELECT *
+FROM superstore
+WHERE price>=99.99
+ORDER BY price desc;
+
+SELECT MIN(price), item_name
+FROM superstore;
+
+SELECT AVG(price)
+FROM superstore
+WHERE category="Kitchen Supplies";
